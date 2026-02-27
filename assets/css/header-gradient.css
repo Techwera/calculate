@@ -1,0 +1,6 @@
+.header-gradient {
+            background: linear-gradient(to bottom, #e5e7eb, #d1d5db);
+            border-bottom: 1px solid #9ca3af;
+            color: #374151;
+            /* padding: 12px 16px; */
+        }

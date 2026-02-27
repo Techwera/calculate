@@ -1,0 +1,118 @@
+            /* Mobile-specific checkbox optimizations */
+            @media (max-width: 576px) {
+
+                /* Increase checkbox size for better touch targets */
+                .form-check-input {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 8px;
+                }
+
+                /* Ensure proper spacing for checkbox labels */
+                .form-check-label {
+
+                    padding-left: 5px;
+                    line-height: 1.4;
+                }
+
+                /* Improve form-check container spacing */
+                .form-check {
+                    margin-bottom: 12px;
+                    padding-left: 0;
+                    display: flex;
+                    align-items: center;
+                }
+
+                /* Specific adjustments for dust proofing section */
+                .dust-buttons {
+                    flex-direction: column;
+                    gap: 8px;
+                }
+
+                .dust-btn {
+                    padding: 12px 16px;
+                    font-size: 16px;
+                    min-height: 44px;
+                    /* Minimum touch target size */
+                }
+
+                /* Fix for tab buttons on mobile */
+                .tab-header button {
+                    padding: 10px 12px;
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                }
+
+                /* Ensure proper spacing in form rows with checkboxes */
+                .row.mb-2 {
+                    margin-bottom: 16px !important;
+                }
+
+                /* Improve alignment in form sections with checkboxes */
+                .form-section .form-check {
+                    margin-bottom: 10px;
+                }
+            }
+
+            /* Additional general improvements for checkboxes */
+            .form-check-input:focus {
+                box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+                border-color: #80bdff;
+            }
+
+            /* Ensure proper contrast for checkboxes */
+            .form-check-input:checked {
+                background-color: #007bff;
+                border-color: #007bff;
+            }
+
+            /* Dust proofing section improvements */
+            .dust-item {
+                margin-bottom: 8px;
+            }
+
+            .dust-options {
+                margin-top: 8px;
+                padding: 10px;
+                background: #f8f9fa;
+                border-radius: 4px;
+            }
+
+            .dust-options label {
+                display: flex;
+                align-items: center;
+                margin-bottom: 6px;
+                font-size: 14px;
+            }
+
+            .logo {
+                max-width: 35%;
+            }
+
+            .dust-options input[type="checkbox"] {
+                margin-right: 8px;
+                width: 18px;
+                height: 18px;
+            }
+
+            /* Prevent horizontal overflow on mobile */
+            html,
+            body {
+                overflow-x: hidden;
+            }
+
+            main {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+
+
+            /* Keep table scrolling separate (not the entire page) */
+            table {
+                width: 100%;
+            }
+
+            .overflow-x-auto {
+                -webkit-overflow-scrolling: touch;
+            }
